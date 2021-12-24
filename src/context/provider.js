@@ -46,7 +46,7 @@ const Dd3Provider = props => {
                 })
             }
         }
-        //eslint-disabled-next-line
+        //eslint-disable-next-line
     }, [data])
 
     return (

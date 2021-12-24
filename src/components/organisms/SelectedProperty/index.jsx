@@ -3,7 +3,6 @@ import { ColOrRow } from "../../atoms/ColOrRow";
 import { ContentItems } from "../../atoms/ContentItems";
 import { Icon } from "../../atoms/Icon";
 import { Image } from "../../atoms/Image";
-import image from '../../../assets/image.png'
 import vehicle from '../../../assets/vehicle.svg'
 import bath from '../../../assets/bath.svg'
 import grid from '../../../assets/grid.svg'

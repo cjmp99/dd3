@@ -15,11 +15,11 @@ import bath from '../../../assets/bath.svg';
 import grid from '../../../assets/grid.svg';
 
 const FilterSection = () => {
-    const { filterData, listProperties, getListroperties, selectedProperty, filterProperties, onChange } = useContext(Dd3Context);
+    const { filterData, listProperties, getListroperties, selectedProperty, onChange } = useContext(Dd3Context);
 
     useEffect(() => {
         getListroperties()
-        //eslint-disabled-next-line
+        //eslint-disable-next-line
     }, [])
 
     return (
