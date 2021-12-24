@@ -18,6 +18,14 @@ export const NavbarSpaceBetween = styled.nav`
     h1{
         color: #fff;
     }
+
+    @media (max-width: 978px){
+        padding: 10px;
+
+        img{
+            object-fit: contain;
+        }
+    }
 `;
 
 export const ContentLinks = styled.div`

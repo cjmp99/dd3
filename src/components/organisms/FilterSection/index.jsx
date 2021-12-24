@@ -1,12 +1,12 @@
-import { Container, ContentFilter, ContentInfo, ContentInput, HeaderSection, Title } from "./styles";
+import { Container, ContentFilter, ContentInfo, ContentInput, HeaderSection, Title, ContentItemsCard } from "./styles";
 import { Image } from "../../atoms/Image";
 import { Input } from "../../atoms/Input";
 import { Icon } from "../../atoms/Icon";
 import { Select } from "../../atoms/Select";
 import { useContext, useEffect } from "react";
 import Dd3Context from "../../../context/context";
-import { ContentItems } from "../../atoms/ContentItems";
 import { Card } from "../../atoms/Card";
+import { ContentItems } from '../../atoms/ContentItems';
 import border from '../../../assets/border-top.svg';
 import search from '../../../assets/search.svg';
 import filter from '../../../assets/filter.svg';
@@ -51,7 +51,7 @@ const FilterSection = () => {
                 </ContentFilter>
             </HeaderSection>
 
-            <ContentItems>
+            <ContentItemsCard>
                 {listProperties.slice(0, 3).map(((property, key) => (
                     <Card key={key} width='300px' height='420px' radius='25px' cursor onClick={() => selectedProperty(property)}>
                         <Image height='260px' src={property.src} card />
@@ -73,7 +73,7 @@ const FilterSection = () => {
                         </ContentInfo>
                     </Card>
                 )))}
-            </ContentItems>
+            </ContentItemsCard>
         </Container>
     )
 }

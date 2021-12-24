@@ -21,6 +21,7 @@ const Footer = () => {
                 <ContentLogo>
                     <Image
                         src={logo}
+                        className='logo'
                         width='100px'
                     />
                     <ContentMedia>

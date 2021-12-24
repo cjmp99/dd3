@@ -14,4 +14,8 @@ export const Card = styled.div`
         transition: .3s all ease;
         box-shadow: 2px 4px 2px 4px rgba(0,0,0,0.2);
     }
+
+    @media (max-width: 978px){
+        width: 80%;
+    }
 `;

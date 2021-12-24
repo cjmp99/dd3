@@ -5,4 +5,8 @@ export const NavLink = styled.span`
     color: #fff;
     font-size: 15px;
     cursor: pointer;
+
+    @media (max-width: 978px){
+        display: none;
+    }
 `;

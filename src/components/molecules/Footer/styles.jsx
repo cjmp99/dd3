@@ -23,6 +23,10 @@ export const Container = styled.div`
     button {
         margin-top: 30px;
     }
+
+    @media (max-width: 978px){
+        padding: 30px;
+    }
 `;
 
 export const ColumnHeading = styled.div`
@@ -38,11 +42,21 @@ export const ColumnHeading = styled.div`
         color: #fff;
         margin-top: 10px;
     }
+
+    @media (max-width: 978px){
+        margin-top: 50px;
+    }
 `;
 
 export const ContentLogo = styled.div`
     width: 40%;
     height: 50px;
+
+    @media (max-width: 978px){
+        .logo{
+            width: 100%;
+        }
+    }
 `;
 
 export const ContainerFirstSection = styled.div`
@@ -52,6 +66,13 @@ export const ContainerFirstSection = styled.div`
     margin-top: ${props => props.top ? props.top : '0px'};
     border-bottom: ${props => props.borderBottom && '1px solid #6363639b'};
     padding-bottom: ${props => props.borderBottom && '50px'};
+
+    @media (max-width: 978px){
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
 `;
 
 export const ContentMedia = styled.div`
@@ -59,4 +80,8 @@ export const ContentMedia = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    @media (max-width: 978px){
+        width: 100%;
+    }
 `;

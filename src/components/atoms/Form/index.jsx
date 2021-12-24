@@ -11,4 +11,8 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 978px){
+        width: 90%;
+    }
 `;
