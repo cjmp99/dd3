@@ -9,6 +9,7 @@ export const Card = styled.div`
     padding: ${props => props.padding ? props.padding : '0px'};
     cursor: ${props => props.cursor && 'pointer'};
     transition: .3s all ease;
+    margin-left: ${props => props.left ? props.left : '0px'};
 
     :hover{
         transition: .3s all ease;
@@ -17,5 +18,6 @@ export const Card = styled.div`
 
     @media (max-width: 978px){
         width: 80%;
+        margin-left: 0px;
     }
 `;

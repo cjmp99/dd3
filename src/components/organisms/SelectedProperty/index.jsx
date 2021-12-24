@@ -22,9 +22,9 @@ const SelectedProperty = () => {
                 <NonData height='500px'>
                     <h2>Select a property to view its properties</h2>
                     {' '} <FaClock size='30' /></NonData>
-                : <Image height='500px' src={property?.src} />}
+                : <Image height='500px' heightR='300px' mtopR='50px' src={property?.src} />}
 
-            <Card width='90%' height='140px' top='30px' padding='40px'>
+            <Card width='80%' height='140px' top='30px' padding='40px'>
                 <h2>Details</h2>
 
                 <ContentItems>

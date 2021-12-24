@@ -6,4 +6,9 @@ export const Image = styled.img`
     object-fit: cover;
     border-top-left-radius: ${props => props.card && '20px'};
     border-top-right-radius: 20px;
+
+    @media (max-width: 978px) {
+        height: ${props => props.heightR && props.heightR};
+        margin-top: ${props => props.mtopR && props.mtopR};
+    }
 `;

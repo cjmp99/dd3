@@ -36,7 +36,7 @@ export const ContentFilter = styled.div`
 `;
 
 export const ContentItemsCard = styled.div`
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

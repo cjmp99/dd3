@@ -53,7 +53,7 @@ const FilterSection = () => {
 
             <ContentItemsCard>
                 {listProperties.slice(0, 3).map(((property, key) => (
-                    <Card key={key} width='300px' height='420px' radius='25px' cursor onClick={() => selectedProperty(property)}>
+                    <Card key={key} width='300px' height='420px' left='20px' radius='25px' cursor onClick={() => selectedProperty(property)}>
                         <Image height='260px' src={property.src} card />
 
                         <ContentInfo>
