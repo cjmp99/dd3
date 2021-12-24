@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./components/molecules/Footer";
+import Navbar from "./components/molecules/Navbar";
+import SelectedProperty from "./components/organisms/SelectedProperty";
+import ContactForm from "./components/organisms/ContactForm";
+import FilterSection from "./components/organisms/FilterSection";
+import { ColOrRow } from "./components/atoms/ColOrRow";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ maxWidth: '100%', background: '#F2F2F2' }}>
+      <Navbar />
+
+      <ColOrRow>
+        <SelectedProperty />
+
+        <ContactForm />
+      </ColOrRow>
+
+      <FilterSection />
+      <Footer />
     </div>
   );
 }
